@@ -75,7 +75,6 @@ M.config = function()
         l = {"<cmd>vsplit<cr>", "Split window vertically"},
         j = {"<cmd>split<cr>", "Split window horizontal"},
         o = {"<c-w>|", "Maximize window"},
-        c = {"<c-w>q", "Close window"},
       },
       b = {
         name = "Buffers",
