@@ -5,3 +5,5 @@ Also, A lot thanks to [ravenxrz](https://github.com/ravenxrz/dotfiles/tree/maste
 # TODO
 
 - [ ] Add AutoSave
+- [x] <leader>zc fold recursively && <leader>zo unfold all
+

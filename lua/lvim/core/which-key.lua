@@ -70,6 +70,11 @@ M.config = function()
       ["c"] = { "<cmd>BufferKill<CR>", "Close Buffer" },
       ["f"] = { require("lvim.core.telescope.custom-finders").find_project_files, "Find File" },
       ["h"] = { "<cmd>nohlsearch<CR>", "No Highlight" },
+      z = {
+        name = "Zip(Fold)",
+        c = {"zM", "fold all"},
+        o = {"zR", "unfold all"},
+      },
       w = {
         name = "Window",
         l = {"<cmd>vsplit<cr>", "Split window vertically"},
