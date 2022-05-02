@@ -220,15 +220,6 @@ local core_plugins = {
     disable = not lvim.builtin.dap.active,
   },
 
-  -- alpha
-  {
-    "goolord/alpha-nvim",
-    config = function()
-      require("lvim.core.alpha").setup()
-    end,
-    disable = not lvim.builtin.alpha.active,
-  },
-
   -- Terminal
   {
     "akinsho/toggleterm.nvim",
