@@ -7,3 +7,4 @@ Also, A lot thanks to [ravenxrz](https://github.com/ravenxrz/dotfiles/tree/maste
 - [ ] Add AutoSave
 - [x] <leader>zc fold recursively && <leader>zo unfold all
 
+- [ ] 清理 alpha 残留物

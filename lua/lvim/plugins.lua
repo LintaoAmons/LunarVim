@@ -230,6 +230,10 @@ local core_plugins = {
     end,
     disable = not lvim.builtin.terminal.active,
   },
+  -- Autosave
+  {
+    "Pocco81/AutoSave.nvim"
+  },
 
   -- SchemaStore
   {
