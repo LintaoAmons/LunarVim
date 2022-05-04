@@ -21,3 +21,4 @@ commands.load(commands.defaults)
 require("lvim.lsp").setup()
 
 require("lvim.addon.autosave")
+require("lvim.addon.no-leader-keymaps")
