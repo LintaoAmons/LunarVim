@@ -106,13 +106,11 @@ M.config = function()
         },
       },
       p = {
-        name = "Packer",
-        c = { "<cmd>PackerCompile<cr>", "Compile" },
-        i = { "<cmd>PackerInstall<cr>", "Install" },
-        r = { "<cmd>lua require('lvim.plugin-loader').recompile()<cr>", "Re-compile" },
-        s = { "<cmd>PackerSync<cr>", "Sync" },
-        S = { "<cmd>PackerStatus<cr>", "Status" },
-        u = { "<cmd>PackerUpdate<cr>", "Update" },
+        name = "Peek",
+        d = { "<cmd>lua require('lvim.lsp.peek').Peek('definition')<cr>", "Definition" },
+        i = { "<cmd>lua require('lvim.lsp.peek').Peek('implementation')<cr>", "Implementation" },
+        t = { "<cmd>lua require('lvim.lsp.peek').Peek('typeDefinition')<cr>", "Type Definition" },
+        p = { "<cmd>lua require 'gitsigns'.preview_hunk()<cr>", "Preview Git Hunk" },
       },
 
       -- " Available Debug Adapters:
@@ -236,11 +234,12 @@ M.config = function()
         name = "Search",
         b = { "<cmd>Telescope git_branches<cr>", "Checkout branch" },
         c = { "<cmd>Telescope colorscheme<cr>", "Colorscheme" },
+        e = { "<cmd>Telescope oldfiles<cr>", "Open Recent File" },
         f = { "<cmd>Telescope find_files<cr>", "Find File" },
         h = { "<cmd>Telescope help_tags<cr>", "Find Help" },
         M = { "<cmd>Telescope man_pages<cr>", "Man Pages" },
-        e = { "<cmd>Telescope oldfiles<cr>", "Open Recent File" },
         R = { "<cmd>Telescope registers<cr>", "Registers" },
+        -- TODO rebind this to <s-c-f> ⬇️
         t = { "<cmd>Telescope live_grep<cr>", "Text" },
         k = { "<cmd>Telescope keymaps<cr>", "Keymaps" },
         C = { "<cmd>Telescope commands<cr>", "Commands" },
