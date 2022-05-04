@@ -64,7 +64,6 @@ M.config = function()
       ["/"] = { "<ESC><CMD>lua require('Comment.api').toggle_linewise_op(vim.fn.visualmode())<CR>", "Comment" },
     },
     mappings = {
-      [";"] = { "<cmd>Alpha<CR>", "Dashboard" },
       ["q"] = { "<cmd>q!<CR>", "Quit" },
       ["/"] = { "<cmd>lua require('Comment.api').toggle_current_linewise()<CR>", "Comment" },
       ["c"] = { "<cmd>BufferKill<CR>", "Close Buffer" },
@@ -80,6 +79,7 @@ M.config = function()
         l = {"<cmd>vsplit<cr>", "Split window vertically"},
         j = {"<cmd>split<cr>", "Split window horizontal"},
         o = {"<c-w>|", "Maximize window"},
+        c = {"<c-w>c", "Close window(buffer)"}
       },
       b = {
         name = "Buffers",
